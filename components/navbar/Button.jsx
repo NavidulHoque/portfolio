@@ -1,8 +1,6 @@
 "use client"
 
-import { scale } from "@/data/scale"
-
-export default function Button({contactRef}) {
+export default function Button({contactRef, scale}) {
 
     function handleRedirect() {
         setTimeout(() => {

@@ -3,7 +3,7 @@ import Button from "./Button";
 import ListItem from "./ListItem";
 import ShowTheme from "./ShowTheme";
 
-export default function Navbar({ contactRef, listItems, windowInnerWidth, setIsSidebarOpen }) {
+export default function Navbar({ contactRef, listItems, windowInnerWidth, setIsSidebarOpen, scale }) {
 
   return (
     <nav className="flex justify-between items-center gap-y-6">
@@ -28,7 +28,10 @@ export default function Navbar({ contactRef, listItems, windowInnerWidth, setIsS
 
           </ul>
 
-          <Button contactRef={contactRef} />
+          <Button 
+            contactRef={contactRef} 
+            scale={scale}
+          />
         </>
       ) : (
         <Bar setIsSidebarOpen={setIsSidebarOpen} />

@@ -1,1 +1,0 @@
-export const scale = "hover:scale-[1.05] transition-all duration-300"

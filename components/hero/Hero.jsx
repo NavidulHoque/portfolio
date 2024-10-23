@@ -3,7 +3,7 @@ import Image from "next/image";
 import Profile from "@/public/images/f-71244.jpg"
 import Button from "./Button";
 
-export default function Hero() {
+export default function Hero({scale}) {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-y-5">
 
@@ -24,7 +24,7 @@ export default function Hero() {
 
       <div className="space-x-4">
 
-        <Button />
+        <Button scale={scale} />
 
       </div>
 

@@ -1,8 +1,6 @@
 "use client"
 
-import { scale } from "@/data/scale"
-
-export default function Button() {
+export default function Button({scale}) {
 
     const downloadResume = () => {
         window.open("/resume/resume.pdf", "_blank")

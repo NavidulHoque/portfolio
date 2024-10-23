@@ -4,12 +4,12 @@ import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
 import About from "../components/About";
 import Experiences from "../components/Experiences";
-import MyProjects from "../components/MyProjects";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/Footer";
 import { ToastContainer } from "react-toastify";
 import { useEffect, useRef, useState } from "react";
 import Sidebar from "@/components/Sidebar";
+import Projects from "../components/Projects";
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -18,6 +18,8 @@ export default function Home() {
   const contactRef = useRef(null)
   const [windowInnerWidth, setWindowInnerWidth] = useState(0)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
+  const scale = "hover:scale-[1.05] transition-all duration-300"
 
   const listItems = [
     {
@@ -67,17 +69,30 @@ export default function Home() {
             listItems={listItems}
             windowInnerWidth={windowInnerWidth}
             setIsSidebarOpen={setIsSidebarOpen}
+            scale={scale}
           />
 
-          <Hero />
+          <Hero scale={scale} />
 
-          <About aboutRef={aboutRef} />
+          <About 
+            aboutRef={aboutRef} 
+            scale={scale}
+          />
 
-          <MyProjects projectsRef={projectsRef} />
+          <Projects 
+            projectsRef={projectsRef}
+            scale={scale} 
+          />
 
-          <Experiences experienceRef={experienceRef} />
+          <Experiences 
+            experienceRef={experienceRef}
+            scale={scale} 
+          />
 
-          <Contact contactRef={contactRef} />
+          <Contact 
+            contactRef={contactRef}
+            scale={scale} 
+          />
 
           <Footer />
 

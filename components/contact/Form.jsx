@@ -1,12 +1,11 @@
 "use client"
 
-import { scale } from "@/data/scale"
 import Input from "./Input"
 import { useState } from "react"
 import errorToast from "@/functions/errorToast"
 import successToast from "@/functions/successToast"
 
-export default function Form() {
+export default function Form({scale}) {
 
     const [loading, setLoading] = useState(false)
 

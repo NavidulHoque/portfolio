@@ -3,7 +3,7 @@ import { contact, moreContactInfo } from "@/data/contact";
 import Heading from "../common/Heading";
 import Form from "./Form";
 
-export default function Contact({contactRef}) {
+export default function Contact({contactRef, scale}) {
   return (
     <div ref={contactRef} className="flex flex-col gap-y-20 pt-8">
 
@@ -62,7 +62,7 @@ export default function Contact({contactRef}) {
 
         </div>
 
-        <Form />
+        <Form scale={scale} />
 
       </div>
 

@@ -1,9 +1,8 @@
 import { projects } from "@/data/projects";
 import Heading from "./common/Heading";
 import Image from "next/image";
-import { scale } from "@/data/scale";
 
-export default function MyProjects({projectsRef}) {
+export default function Projects({projectsRef, scale}) {
   return (
     <div ref={projectsRef} className="flex flex-col gap-y-16 pt-8">
 

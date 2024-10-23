@@ -1,8 +1,7 @@
 import { skills } from "@/data/skills";
 import Heading from "./common/Heading";
-import { scale } from "@/data/scale";
 
-export default function About({ aboutRef }) {
+export default function About({ aboutRef, scale }) {
   return (
     <div ref={aboutRef} className="flex flex-col gap-y-5 pt-8">
 

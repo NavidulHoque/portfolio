@@ -1,8 +1,7 @@
 import { experiences } from "@/data/experience";
 import Heading from "./common/Heading";
-import { scale } from "@/data/scale";
 
-export default function Experiences({experienceRef}) {
+export default function Experiences({experienceRef, scale}) {
   return (
     <div ref={experienceRef} className="flex flex-col gap-y-16 pt-8">
 
