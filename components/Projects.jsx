@@ -8,7 +8,7 @@ export default function Projects({projectsRef, scale}) {
 
       <Heading label="Projects" />
 
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
 
         {projects.map(project => (
 
@@ -26,7 +26,7 @@ export default function Projects({projectsRef, scale}) {
               className="w-full rounded-lg object-cover object-center"
             />
 
-            <p className="self-start bg-gradient-text bg-clip-text text-transparent">{project.name}</p>
+            <p className="self-start bg-gradient-text bg-clip-text text-transparent text-[23px]">{project.name}</p>
 
           </a>
         ))}
