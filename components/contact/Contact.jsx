@@ -9,10 +9,10 @@ export default function Contact({contactRef}) {
 
       <Heading label="Get in touch" />
 
-      <div className="flex gap-x-16">
+      <div className="flex md:flex-row flex-col md:gap-x-16 gap-y-10">
 
         {/* Contact Info */}
-        <div className="w-[50%] flex flex-col gap-y-5">
+        <div className="md:w-[50%] flex flex-col gap-y-5">
 
           <h2 className="self-start bg-gradient-text bg-clip-text text-transparent text-[50px] leading-[50px] font-semibold">Let's talk</h2>
 
@@ -20,14 +20,14 @@ export default function Contact({contactRef}) {
 
           <div className="flex flex-col gap-y-6">
 
-            {contact.map((info, index) => (
+            {contact.map(info => (
 
               <div
-                key={index}
+                key={info.label}
                 className="flex gap-x-4"
               >
 
-                <div className="w-[7%]">
+                <div className="w-[40px]">
                   {info.icon}
                 </div>
 
@@ -50,7 +50,7 @@ export default function Contact({contactRef}) {
                   href={info.link}
                   target="_blank" 
                   key={index}
-                  className="cursor-pointer hover:text-blue-500"
+                  className="cursor-pointer hover:text-blue-500 text-[24px]"
                 >
                   {info.icon}
                 </a>

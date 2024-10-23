@@ -12,7 +12,7 @@ export default function Button({contactRef}) {
 
     return (
         <button
-            className={`bg-gradient-bg text-[18px] py-[15px] px-[20px] rounded-full cursor-pointer ${scale}`}
+            className={`min-[900px]:inline-block hidden bg-gradient-bg text-[18px] py-[15px] px-[20px] rounded-full cursor-pointer ${scale}`}
             onClick={() => handleRedirect()}
         >
             Connect With Me

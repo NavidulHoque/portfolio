@@ -2,7 +2,7 @@ import { skills } from "@/data/skills";
 import Heading from "./common/Heading";
 import { scale } from "@/data/scale";
 
-export default function About({aboutRef}) {
+export default function About({ aboutRef }) {
   return (
     <div ref={aboutRef} className="flex flex-col gap-y-5 pt-8">
 
@@ -16,17 +16,24 @@ export default function About({aboutRef}) {
 
         {skills.map(skill => (
 
-          <div 
+          <div
             key={skill.name}
-            className={`flex items-center gap-x-5 w-full ${scale} cursor-pointer`}
+            className={`flex lg:flex-row flex-col items-center lg:gap-x-5 gap-y-5 w-full ${scale} cursor-pointer`}
           >
 
-            <span className="w-[15%]">{skill.name}</span>
-            <hr 
-              className='h-[8px] rounded-full bg-gradient-bg border-none outline-none' 
-              style={{width: skill.skill}}
-            />
-            
+            <span className="self-start lg:basis-[150px] text-2xl">{skill.name}</span>
+
+            <div className="flex items-center gap-x-2 w-full">
+
+              <hr
+                className='justify-self-start lg:justify-self-center h-[8px] rounded-full bg-gradient-bg border-none outline-none'
+                style={{ width: skill.skill }}
+              />
+
+              <span>{skill.skill}</span>
+
+            </div>
+
           </div>
         ))}
 

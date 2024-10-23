@@ -1,31 +1,12 @@
+import Bar from "./Bar";
 import Button from "./Button";
 import ListItem from "./ListItem";
 import ShowTheme from "./ShowTheme";
 
-export default function Navbar({ aboutRef, experienceRef, projectsRef, contactRef}) {
-
-  const listItems = [
-    {
-      label: "About Me",
-      ref: aboutRef
-    },
-    {
-      label: "Experience",
-      ref: experienceRef
-    },
-    {
-      label: "Projects",
-      ref: projectsRef
-    },
-    {
-      label: "Contact",
-      ref: contactRef
-    }
-  ]
-  
+export default function Navbar({ contactRef, listItems, windowInnerWidth, setIsSidebarOpen }) {
 
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex justify-between items-center gap-y-6">
 
       <div className="relative">
 
@@ -35,17 +16,23 @@ export default function Navbar({ aboutRef, experienceRef, projectsRef, contactRe
 
       </div>
 
-      <ul className="flex justify-center items-center gap-x-10">
+      {windowInnerWidth >= 640 ? (
+        <>
+          <ul className="flex justify-center items-center md:gap-x-10 gap-x-6">
 
-        {listItems.map(
-          item => (
-            <ListItem key={item.label} item={item} />
-          )
-        )}
+            {listItems.map(
+              item => (
+                <ListItem key={item.label} item={item} />
+              )
+            )}
 
-      </ul>
+          </ul>
 
-      <Button contactRef={contactRef} />
+          <Button contactRef={contactRef} />
+        </>
+      ) : (
+        <Bar setIsSidebarOpen={setIsSidebarOpen} />
+      )}
 
     </nav>
   )

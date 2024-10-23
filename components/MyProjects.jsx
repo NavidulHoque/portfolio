@@ -1,22 +1,23 @@
 import { projects } from "@/data/projects";
 import Heading from "./common/Heading";
 import Image from "next/image";
+import { scale } from "@/data/scale";
 
 export default function MyProjects({projectsRef}) {
   return (
     <div ref={projectsRef} className="flex flex-col gap-y-16 pt-8">
 
-      <Heading label="My Projects" />
+      <Heading label="Projects" />
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
 
-        {projects.map((project, index) => (
+        {projects.map(project => (
 
           <a
             href={project.link}
             target="_blank"
-            key={index}
-            className="w-full cursor-pointer flex flex-col gap-y-3 hover:scale-[1.05] transition-all duration-300"
+            key={project.name}
+            className={`w-full cursor-pointer flex flex-col gap-y-3 ${scale}`}
           >
 
             <Image

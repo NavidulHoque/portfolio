@@ -2,8 +2,9 @@
 
 import { scale } from "@/data/scale"
 import Input from "./Input"
-import { Bounce, toast } from "react-toastify"
 import { useState } from "react"
+import errorToast from "@/functions/errorToast"
+import successToast from "@/functions/successToast"
 
 export default function Form() {
 
@@ -17,57 +18,44 @@ export default function Form() {
 
         if (!loading) {
 
-            try {
-                setLoading(true)
+            if (e.target.name.value && e.target.email.value && e.target.message.value) {
 
-                const response = await fetch("https://api.web3forms.com/submit", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        Accept: "application/json",
-                    },
-                    body: JSON.stringify({
-                        access_key: "a5579398-f7aa-4aa1-95ea-d8f91b6c5f56",
-                        name: e.target.name.value,
-                        email: e.target.email.value,
-                        message: e.target.message.value,
-                    }),
-                });
+                try {
+                    setLoading(true)
 
-                const result = await response.json()
+                    const response = await fetch("https://api.web3forms.com/submit", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            Accept: "application/json",
+                        },
+                        body: JSON.stringify({
+                            access_key: "a5579398-f7aa-4aa1-95ea-d8f91b6c5f56",
+                            name: e.target.name.value,
+                            email: e.target.email.value,
+                            message: e.target.message.value,
+                        }),
+                    });
 
-                if (result.success) {
+                    const result = await response.json()
 
+                    if (result.success) {
+
+                        setLoading(false)
+
+                        successToast(result.message)
+                    }
+                }
+
+                catch {
                     setLoading(false)
 
-                    toast.success(result.message, {
-                        position: "top-right",
-                        autoClose: 2000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: false,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "colored",
-                        transition: Bounce,
-                    })
+                    errorToast("Something went wrong, please try again")
                 }
-            } 
-            
-            catch {
-                setLoading(false)
+            }
 
-                toast.error("Something went wrong, please try again", {
-                    position: "top-right",
-                    autoClose: 4000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "colored",
-                    transition: Bounce,
-                })
+            else{
+                errorToast("Please fill up the form")
             }
         }
     }
@@ -75,7 +63,7 @@ export default function Form() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="w-[50%] flex flex-col gap-y-7"
+            className="md:w-[50%] flex flex-col gap-y-7"
         >
 
             <Input
@@ -111,7 +99,7 @@ export default function Form() {
 
             <button
                 type="submit"
-                className={`bg-gradient-bg w-[40%] rounded-full py-[18px] ${scale}`}
+                className={`md:self-start self-center bg-gradient-bg w-[250px] rounded-full py-[18px] ${scale}`}
                 disabled={loading}
             >
                 Submit Now

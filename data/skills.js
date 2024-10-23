@@ -29,7 +29,7 @@ export const skills = [
     },
     {
         name: "MongoDB",
-        skill: "70%"
+        skill: "67%"
     },
     {
         name: "Firebase",

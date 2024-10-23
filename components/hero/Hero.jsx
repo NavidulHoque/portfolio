@@ -14,13 +14,13 @@ export default function Hero() {
         className="w-[200px] h-[200px] rounded-full object-cover object-top"
       />
 
-      <h1 className="text-[65px] text-center leading-[70px] font-semibold">
+      <h1 className="text-[45px] lg:text-[60px] leading-[1.1] font-semibold text-center">
 
         <span className="bg-gradient-text bg-clip-text text-transparent">I'm Md.Navidul Hoque</span>, MERN Stack developer from Bangladesh.
         
       </h1>
 
-      <p>I am a fresh graduate from Millitary Institute of Science and Technology</p>
+      <p className="text-center">I am a fresh graduate from Millitary Institute of Science and Technology</p>
 
       <div className="space-x-4">
 

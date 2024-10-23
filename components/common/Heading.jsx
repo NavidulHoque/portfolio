@@ -2,9 +2,9 @@ import BigTheme from "@/icons/BigTheme";
 
 export default function Heading({label}) {
   return (
-    <div className="relative text-center self-center">
+    <div className="relative text-center md:self-center self-start">
 
-        <h1 className="text-[60px] leading-[50px] font-semibold relative z-10">{label}</h1>
+        <h1 className="text-[45px] lg:text-[60px] leading-[1.1] font-semibold relative z-10">{label}</h1>
 
         <div className="absolute top-[10px] right-[-40px] z-0">
 

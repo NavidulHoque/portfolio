@@ -8,36 +8,73 @@ import MyProjects from "../components/MyProjects";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/Footer";
 import { ToastContainer } from "react-toastify";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   const aboutRef = useRef(null);
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null)
+  const [windowInnerWidth, setWindowInnerWidth] = useState(window.innerWidth)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
+  const listItems = [
+    {
+      label: "About Me",
+      ref: aboutRef
+    },
+    {
+      label: "Projects",
+      ref: projectsRef
+    },
+    {
+      label: "Experience",
+      ref: experienceRef
+    },
+    {
+      label: "Contact",
+      ref: contactRef
+    }
+  ]
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      setWindowInnerWidth(window.innerWidth)
+      setIsSidebarOpen(false)
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+
+  }, [])
 
   return (
     <>
       <ToastContainer />
 
-      <div className="bg-[#161513] min-h-screen text-white font-outfitRegular">
+      {windowInnerWidth < 640 && <Sidebar listItems={listItems} isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />}
 
-        <div className="w-[80vw] mx-auto flex flex-col gap-y-20 text-lg md:text-xl lg:text-2xl py-7">
+      <div className="bg-[#161513] min-h-screen text-white">
+
+        <div className="xl:w-[80vw] w-[90vw] mx-auto flex flex-col gap-y-20 text-lg md:text-xl lg:text-2xl py-7">
 
           <Navbar
-            aboutRef={aboutRef}
-            experienceRef={experienceRef}
-            projectsRef={projectsRef}
             contactRef={contactRef}
+            listItems={listItems}
+            windowInnerWidth={windowInnerWidth}
+            setIsSidebarOpen={setIsSidebarOpen}
           />
 
           <Hero />
 
           <About aboutRef={aboutRef} />
 
-          <Experiences experienceRef={experienceRef} />
-
           <MyProjects projectsRef={projectsRef} />
+
+          <Experiences experienceRef={experienceRef} />
 
           <Contact contactRef={contactRef} />
 
