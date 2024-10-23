@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
@@ -16,7 +16,7 @@ export default function Home() {
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null)
-  const [windowInnerWidth, setWindowInnerWidth] = useState(window.innerWidth)
+  const [windowInnerWidth, setWindowInnerWidth] = useState(0)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   const listItems = [
@@ -39,6 +39,7 @@ export default function Home() {
   ]
 
   useEffect(() => {
+    setWindowInnerWidth(window.innerWidth);
 
     const handleResize = () => {
       setWindowInnerWidth(window.innerWidth)
