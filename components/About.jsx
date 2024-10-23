@@ -1,23 +1,24 @@
 import { skills } from "@/data/skills";
 import Heading from "./common/Heading";
+import { scale } from "@/data/scale";
 
-export default function About() {
+export default function About({aboutRef}) {
   return (
-    <div className="flex flex-col gap-y-5 mt-8">
+    <div ref={aboutRef} className="flex flex-col gap-y-5 pt-8">
 
       <Heading label="About Me" />
 
-      <p className="my-10">I am a passionate MERN Stack Developer with over 5 months of experience. My hands-on experience has strengthened my understanding of web development, particularly in building responsive and dynamic user interfaces. I also have experience in backend development, working with Node.js and Express to create robust APIs and manage databases effectively.</p>
+      <p className="my-10">I am a MERN Stack Developer who is passionate about making 100% error free dynamic websites. My hands-on experience has strengthened my understanding of web development, particularly in building responsive and dynamic user interfaces. On the backend, I focus on developing robust APIs, handling databases efficiently and implementing secure authentication.</p>
 
       <div className="flex flex-col gap-y-6">
 
         <h2 className="self-start bg-gradient-text bg-clip-text text-transparent text-3xl">Skills: </h2>
 
-        {skills.map((skill, index) => (
+        {skills.map(skill => (
 
           <div 
-            key={index}
-            className="flex items-center gap-x-5 w-full hover:scale-[1.05] transition-all duration-300 cursor-pointer"
+            key={skill.name}
+            className={`flex items-center gap-x-5 w-full ${scale} cursor-pointer`}
           >
 
             <span className="w-[15%]">{skill.name}</span>

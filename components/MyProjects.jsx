@@ -2,9 +2,9 @@ import { projects } from "@/data/projects";
 import Heading from "./common/Heading";
 import Image from "next/image";
 
-export default function MyProjects() {
+export default function MyProjects({projectsRef}) {
   return (
-    <div className="flex flex-col gap-y-16 mt-8">
+    <div ref={projectsRef} className="flex flex-col gap-y-16 pt-8">
 
       <Heading label="My Projects" />
 

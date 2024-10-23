@@ -1,8 +1,29 @@
 import Button from "./Button";
-import ListItems from "./ListItems";
+import ListItem from "./ListItem";
 import ShowTheme from "./ShowTheme";
 
-export default function Navbar() {
+export default function Navbar({ aboutRef, experienceRef, projectsRef, contactRef}) {
+
+  const listItems = [
+    {
+      label: "About Me",
+      ref: aboutRef
+    },
+    {
+      label: "Experience",
+      ref: experienceRef
+    },
+    {
+      label: "Projects",
+      ref: projectsRef
+    },
+    {
+      label: "Contact",
+      ref: contactRef
+    }
+  ]
+  
+
   return (
     <nav className="flex justify-between items-center">
 
@@ -16,15 +37,15 @@ export default function Navbar() {
 
       <ul className="flex justify-center items-center gap-x-10">
 
-        {["Home", "About Me", "Experience", "Projects", "Contact"].map(
-          (label, index) => (
-            <ListItems key={index} label={label} />
+        {listItems.map(
+          item => (
+            <ListItem key={item.label} item={item} />
           )
         )}
 
       </ul>
 
-      <Button />
+      <Button contactRef={contactRef} />
 
     </nav>
   )

@@ -1,3 +1,5 @@
+"use client"
+
 export default function Input({ name, label, type, placeholder, style  }) {
 
     return (

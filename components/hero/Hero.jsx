@@ -16,7 +16,7 @@ export default function Hero() {
 
       <h1 className="text-[65px] text-center leading-[70px] font-semibold">
 
-        <span className="bg-gradient-text bg-clip-text text-transparent">I'm Md.Navidul Hoque</span>, MERN Stack developer from bangladesh.
+        <span className="bg-gradient-text bg-clip-text text-transparent">I'm Md.Navidul Hoque</span>, MERN Stack developer from Bangladesh.
         
       </h1>
 
@@ -24,15 +24,7 @@ export default function Hero() {
 
       <div className="space-x-4">
 
-        <Button 
-          label="Connect With Me"
-          extraStyle="bg-gradient-bg" 
-        />
-
-        <Button 
-          label="My Resume"
-          extraStyle="border-[2px] border-[#b415ff]" 
-        />
+        <Button />
 
       </div>
 

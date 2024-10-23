@@ -3,9 +3,9 @@ import { contact, moreContactInfo } from "@/data/contact";
 import Heading from "../common/Heading";
 import Form from "./Form";
 
-export default function Contact() {
+export default function Contact({contactRef}) {
   return (
-    <div className="flex flex-col gap-y-20 mt-8">
+    <div ref={contactRef} className="flex flex-col gap-y-20 pt-8">
 
       <Heading label="Get in touch" />
 
@@ -16,7 +16,7 @@ export default function Contact() {
 
           <h2 className="self-start bg-gradient-text bg-clip-text text-transparent text-[50px] leading-[50px] font-semibold">Let's talk</h2>
 
-          <p className="my-5">I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
+          <p className="my-5">I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
 
           <div className="flex flex-col gap-y-6">
 

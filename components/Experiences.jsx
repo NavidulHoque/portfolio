@@ -1,9 +1,9 @@
 import { experiences } from "@/data/experience";
 import Heading from "./common/Heading";
 
-export default function Experiences() {
+export default function Experiences({experienceRef}) {
   return (
-    <div className="flex flex-col gap-y-16 mt-8">
+    <div ref={experienceRef} className="flex flex-col gap-y-16 pt-8">
 
       <Heading label="My Experience" />
 
