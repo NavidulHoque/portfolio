@@ -20,7 +20,7 @@ export default function About({ aboutRef, scale }) {
             className={`flex lg:flex-row flex-col items-center lg:gap-x-5 gap-y-5 w-full ${scale} cursor-pointer`}
           >
 
-            <span className="self-start lg:basis-[150px] text-2xl">{skill.name}</span>
+            <span className="self-start lg:basis-[165px] text-2xl">{skill.name}</span>
 
             <div className="flex items-center gap-x-2 w-full">
 
