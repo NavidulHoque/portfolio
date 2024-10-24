@@ -29,7 +29,7 @@ export default function Form({scale}) {
                             Accept: "application/json",
                         },
                         body: JSON.stringify({
-                            access_key: "a5579398-f7aa-4aa1-95ea-d8f91b6c5f56",
+                            access_key: process.env.NEXT_PUBLIC_ACCESS_KEY,
                             name: e.target.name.value,
                             email: e.target.email.value,
                             message: e.target.message.value,
