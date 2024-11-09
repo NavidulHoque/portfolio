@@ -12,7 +12,7 @@ export default function Button() {
             className='md:self-start self-center bg-gradient-bg w-[250px] rounded-full py-[18px] hover-scale'
             disabled={pending}
         >
-            {pending ? "Submitting" : "Submit"}
+            {pending ? "Submitting..." : "Submit"}
         </button>
     )
 }
