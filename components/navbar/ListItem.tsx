@@ -2,13 +2,16 @@
 
 import { useState } from "react"
 import ShowTheme from "./ShowTheme"
+import { Item } from "@/app/page"
 
-export default function ListItem({ item }) {
+export default function ListItem({ item }: {item: Item}) {
   const [isHovered, setIsHovered] = useState(false)
 
-  function handleRedirect(ref) {
+  function handleRedirect(ref: React.RefObject<HTMLDivElement>) {
     setTimeout(() => {
-      ref.current.scrollIntoView({ behavior: 'smooth' })
+      if (ref.current) {
+        ref.current.scrollIntoView({ behavior: 'smooth' })
+      }
     }, 0)
   }
 

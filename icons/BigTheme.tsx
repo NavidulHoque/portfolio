@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function BigTheme({width, height}) {
+export default function BigTheme({width, height}: {width: string, height: string}) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

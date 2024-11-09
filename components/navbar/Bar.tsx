@@ -2,7 +2,7 @@
 
 import { FaBarsStaggered } from "react-icons/fa6";
 
-export default function Bar({setIsSidebarOpen}) {
+export default function Bar({setIsSidebarOpen}: {setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>}) {
   return (
     <FaBarsStaggered 
       onClick={() => setIsSidebarOpen(true)}

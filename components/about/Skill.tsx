@@ -11,9 +11,9 @@ export default function Skill({ skill }: Prop) {
   return (
     <div className="bg-[#232329] flex-center flex-col gap-y-5 size-60 rounded-lg hover:bg-gradient-hover hover-scale cursor-pointer">
 
-      <Icon className="size-28" />
+      <Icon />
 
-      <span>{name}</span>
+      <span className="text-2xl">{name}</span>
 
     </div>
   )
