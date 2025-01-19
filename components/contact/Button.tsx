@@ -9,7 +9,7 @@ export default function Button() {
     return (
         <button
             type="submit"
-            className='md:self-start self-center bg-gradient-bg w-[250px] rounded-full py-[18px] hover-scale'
+            className={`md:self-start self-center bg-gradient-bg w-[250px] rounded-full py-[18px] hover-scale ${pending && "opacity-70"}`}
             disabled={pending}
         >
             {pending ? "Submitting..." : "Submit"}

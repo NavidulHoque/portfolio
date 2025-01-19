@@ -4,9 +4,10 @@ import Input from "./Input"
 import Form from 'next/form'
 import Button from "./Button"
 import TextArea from "./TextArea"
-import { useRef} from "react"
+import { useRef } from "react"
 import { errorToast } from "@/lib/utils"
 import { successToast } from '@/lib/utils';
+import { sendEmail } from "@/app/actions/form"
 
 export default function FormComp() {
 
@@ -14,36 +15,29 @@ export default function FormComp() {
 
     async function formAction(formData: FormData) {
 
-        if (formData.get("name") && formData.get("email") && formData.get("message")) {
-    
+        const name = formData.get("name") as string
+        const email = formData.get("email") as string
+        const message = formData.get("message") as string
+
+        if (name && email && message) {
+
             try {
-    
-                const response = await fetch("https://api.web3forms.com/submit", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        Accept: "application/json",
-                    },
-                    body: JSON.stringify({
-                        access_key: process.env.NEXT_PUBLIC_ACCESS_KEY,
-                        name: formData.get("name"),
-                        email: formData.get("email"),
-                        message: formData.get("message"),
-                    }),
-                });
-    
-                const result = await response.json()
-    
+
+                const result = await sendEmail(name, email, message)
+
                 if (result.success) {
-                    successToast(result.message);
+                    successToast(result.message)
                 }
             }
-    
-            catch {
-                errorToast("Something went wrong, please try again");
+
+            catch (error) {
+
+                if (error instanceof Error) {
+                    errorToast(error.message);
+                }
             }
         }
-    
+
         else {
             errorToast("Please fill up the form");
         }
