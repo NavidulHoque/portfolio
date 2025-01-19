@@ -13,7 +13,7 @@ import Projects from "../components/Projects";
 
 export interface Item {
   label: string;
-  ref: React.RefObject<HTMLDivElement>;
+  ref: React.RefObject<HTMLDivElement | null>;
 }
 
 export default function Home() {

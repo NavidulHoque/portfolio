@@ -2,7 +2,7 @@ import { projects } from "@/data/projects";
 import Heading from "./common/Heading";
 import Image from "next/image";
 
-export default function Projects({ projectsRef }: {projectsRef: React.RefObject<HTMLDivElement>}) {
+export default function Projects({ projectsRef }: {projectsRef: React.RefObject<HTMLDivElement | null>}) {
   return (
     <div ref={projectsRef} className="flex flex-col gap-y-16 pt-8">
 

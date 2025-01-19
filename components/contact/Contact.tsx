@@ -3,7 +3,7 @@ import { ContactType, MoreContactInfo, contact, moreContactInfo } from "@/data/c
 import Heading from "../common/Heading";
 import FormComp from "./FormComp";
 
-export default function Contact({contactRef}: {contactRef: React.RefObject<HTMLDivElement>}) {
+export default function Contact({contactRef}: {contactRef: React.RefObject<HTMLDivElement | null>}) {
   return (
     <div ref={contactRef} className="flex flex-col gap-y-20 pt-8">
 

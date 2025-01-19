@@ -5,7 +5,7 @@ import ListItem from "./ListItem";
 import ShowTheme from "./ShowTheme";
 
 interface Prop {
-  contactRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement | null>;
   listItems: Item[];
   windowInnerWidth: number;
   setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>

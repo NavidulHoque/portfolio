@@ -1,7 +1,7 @@
 import { experiences } from "@/data/experience";
 import Heading from "./common/Heading";
 
-export default function Experiences({experienceRef}: {experienceRef: React.RefObject<HTMLDivElement>}) {
+export default function Experiences({experienceRef}: {experienceRef: React.RefObject<HTMLDivElement | null>}) {
   return (
     <div ref={experienceRef} className="flex flex-col gap-y-16 pt-8">
 

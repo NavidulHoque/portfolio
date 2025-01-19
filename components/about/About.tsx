@@ -3,7 +3,7 @@ import Heading from "../common/Heading";
 import SkillDiv from "./SkillDiv";
 
 
-export default function About({ aboutRef }: { aboutRef: React.RefObject<HTMLDivElement> }) {
+export default function About({ aboutRef }: { aboutRef: React.RefObject<HTMLDivElement | null> }) {
   return (
     <div ref={aboutRef} className="flex flex-col gap-y-5 pt-8">
 
