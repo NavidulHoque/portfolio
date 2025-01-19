@@ -7,7 +7,7 @@ import { Item } from "@/app/page"
 export default function ListItem({ item }: {item: Item}) {
   const [isHovered, setIsHovered] = useState(false)
 
-  function handleRedirect(ref: React.RefObject<HTMLDivElement>) {
+  function handleRedirect(ref: React.RefObject<HTMLDivElement | null>) {
     setTimeout(() => {
       if (ref.current) {
         ref.current.scrollIntoView({ behavior: 'smooth' })

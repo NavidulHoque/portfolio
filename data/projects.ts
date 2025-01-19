@@ -6,6 +6,7 @@ import noteApp from "@/public/images/noteApp.png"
 import ToDoList from "@/public/images/TodoList.png"
 import FoodDeliveryWebsite from "@/public/images/FoodDeliveryWebsite.png"
 import FoodDeliveryWebsiteAdmin from "@/public/images/FoodDeliveryWebsite-Admin.png"
+import BgRemoval from "@/public/images/BgRemoval.png"
 import { StaticImageData } from "next/image"
 
 
@@ -51,12 +52,12 @@ export const projects: Projects[] = [
         description2: "Used Firebase for authentication, real-time database, along with React JS for a dynamic, responsive user interface."
     },
     {
-        name: "File Management System",
-        link: "https://filemanagementsystem.netlify.app",
-        photo: fileManagementSystem,
-        description1: "Developed a file management system that allows users to create private folders and files, with features to edit the data of file and delete both files and folders.",
+        name: "Background Removal Application",
+        link: "https://bgremoval23.netlify.app",
+        photo: BgRemoval,
+        description1: "Built a full stack background removal app where users can sign up with Google, GitHub, or credentials. New users get 5 free credits to remove image backgrounds. After using the credits, users need to purchase more (buying feature coming soon).",
 
-        description2: "Used React JS for a dynamic, user-friendly interface, MongoDB for secure data storage, Mongoose for handling database schema, Express JS for backend."
+        description2: "Used NextJS, Typescript and Shadcn UI for the frontend, Next-Auth for authentication, ExpressJS for the backend, Mongoose for handling database schema and MongoDB as the database."
     },
     {
         name: "Gemini Clone",
@@ -65,6 +66,14 @@ export const projects: Projects[] = [
         description1: "Developed a Gemini clone that allows users to generate results almost similar to the Gemini platform",
 
         description2: "Used React JS to create a responsive interface that replicates better user experience."
+    },
+    {
+        name: "File Management System",
+        link: "https://filemanagementsystem.netlify.app",
+        photo: fileManagementSystem,
+        description1: "Developed a file management system that allows users to create private folders and files, with features to edit the data of file and delete both files and folders.",
+
+        description2: "Used React JS for a dynamic, user-friendly interface, MongoDB for secure data storage, Mongoose for handling database schema, Express JS for backend."
     },
     {
         name: "Note App",

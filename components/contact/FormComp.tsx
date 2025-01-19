@@ -5,8 +5,8 @@ import Form from 'next/form'
 import Button from "./Button"
 import TextArea from "./TextArea"
 import { useRef} from "react"
-import successToast from "@/lib/successToast"
-import errorToast from "@/lib/errorToast"
+import { errorToast } from "@/lib/utils"
+import { successToast } from '@/lib/utils';
 
 export default function FormComp() {
 

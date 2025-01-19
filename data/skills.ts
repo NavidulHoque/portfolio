@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-empty-object-type */
 import { FC } from "react";
 import Typescript from "@/icons/Typescript";
 import Javascript from "@/icons/Javascript";
@@ -16,7 +15,6 @@ export interface Base{
     icon: FC,
     name: string
 }
-
 
 export const languages: Base[] = [
     {
