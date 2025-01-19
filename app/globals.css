@@ -2,20 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer utilities {
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .flex-column {
+    @apply flex flex-col;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .flex-center{
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between{
+    @apply flex justify-between items-center;
+  }
+
+  .hover-scale {
+    @apply hover:scale-[1.05] transition-all duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-text bg-clip-text text-transparent;
+  }
+
+  .input{
+    @apply bg-[#32323c] text-[#a0a0a0] w-full py-[18px] px-[20px] rounded-md border-none outline-none;
+  }
 }
