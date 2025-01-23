@@ -1,12 +1,14 @@
-import { Base } from "@/data/skills";
+import { Base, SkillSection } from "@/data/skills";
 import Skill from '@/components/about/Skill';
 
 interface Prop{
-    label: string;
-    skills: Base[];
+    section: SkillSection;
 }
 
-export default function SkillDiv({label, skills}: Prop) {
+export default function SkillsContainer({section}: Prop) {
+
+    const {label, skills} = section
+
     return (
         <div className="flex-column gap-y-7">
 

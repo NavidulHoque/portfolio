@@ -1,9 +1,15 @@
 "use client"
 
-export default function Button({contactRef}: {contactRef: React.RefObject<HTMLDivElement | null>}) {
+import useRefCustom from "@/hooks/useRefCustom"
 
-    function handleRedirect() {
+export default function Button() {
+
+    const {contactRef} = useRefCustom()
+
+    function handleScroll() {
+
         if (contactRef.current) {
+
             setTimeout(() => {
                 if (contactRef.current) {
                     contactRef.current.scrollIntoView({ behavior: 'smooth' })
@@ -15,7 +21,7 @@ export default function Button({contactRef}: {contactRef: React.RefObject<HTMLDi
     return (
         <button
             className='min-[950px]:inline-block hidden bg-gradient-bg text-[18px] py-[15px] px-[20px] rounded-full cursor-pointer hover-scale'
-            onClick={() => handleRedirect()}
+            onClick={handleScroll}
         >
             Connect With Me
         </button>

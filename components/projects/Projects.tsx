@@ -1,10 +1,11 @@
 import { projects } from "@/data/projects";
-import Heading from "./common/Heading";
+import Heading from "../common/Heading";
 import Image from "next/image";
+import ProjectsWrapper from "./ProjectsWrapper";
 
-export default function Projects({ projectsRef }: {projectsRef: React.RefObject<HTMLDivElement | null>}) {
+export default function Projects() {
   return (
-    <div ref={projectsRef} className="flex flex-col gap-y-16 pt-8">
+    <ProjectsWrapper>
 
       <Heading label="Projects" />
 
@@ -42,11 +43,10 @@ export default function Projects({ projectsRef }: {projectsRef: React.RefObject<
 
           </div>
 
-
         ))}
 
       </div>
 
-    </div>
+    </ProjectsWrapper>
   )
 }

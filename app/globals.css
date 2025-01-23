@@ -4,6 +4,10 @@
 
 @layer utilities {
 
+  .text-45-semibold{
+    @apply text-[45px] leading-[1.1] font-semibold;
+  }
+
   .flex-column {
     @apply flex flex-col;
   }

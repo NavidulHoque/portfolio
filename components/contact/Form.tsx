@@ -1,7 +1,6 @@
 "use client"
 
 import Input from "./Input"
-import Form from 'next/form'
 import Button from "./Button"
 import TextArea from "./TextArea"
 import { useRef } from "react"
@@ -9,7 +8,7 @@ import { errorToast } from "@/lib/utils"
 import { successToast } from '@/lib/utils';
 import { sendEmail } from "@/app/actions/form"
 
-export default function FormComp() {
+export default function Form() {
 
     const formRef = useRef<HTMLFormElement | null>(null)
 
@@ -43,9 +42,8 @@ export default function FormComp() {
         }
     }
 
-
     return (
-        <Form
+        <form
             action={formAction}
             className="md:w-[50%] flex flex-col gap-y-7"
             ref={formRef}
@@ -75,6 +73,6 @@ export default function FormComp() {
 
             <Button />
 
-        </Form>
+        </form>
     )
 }

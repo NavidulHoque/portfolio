@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import { ContactType, MoreContactInfo, contact, moreContactInfo } from "@/data/contact";
 import Heading from "../common/Heading";
-import FormComp from "./FormComp";
+import Form from "./Form";
+import ContactWrapper from "./ContactWrapper";
 
-export default function Contact({contactRef}: {contactRef: React.RefObject<HTMLDivElement | null>}) {
+export default function Contact() {
   return (
-    <div ref={contactRef} className="flex flex-col gap-y-20 pt-8">
+    <ContactWrapper>
 
       <Heading label="Get in touch" />
 
@@ -62,10 +63,10 @@ export default function Contact({contactRef}: {contactRef: React.RefObject<HTMLD
 
         </div>
 
-        <FormComp />
+        <Form />
 
       </div>
 
-    </div>
+    </ContactWrapper>
   )
 }

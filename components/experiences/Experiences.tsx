@@ -1,9 +1,10 @@
 import { experiences } from "@/data/experience";
-import Heading from "./common/Heading";
+import Heading from "../common/Heading";
+import ExperiencesWrapper from "./ExperiencesWrapper";
 
-export default function Experiences({experienceRef}: {experienceRef: React.RefObject<HTMLDivElement | null>}) {
+export default function Experiences() {
   return (
-    <div ref={experienceRef} className="flex flex-col gap-y-16 pt-8">
+    <ExperiencesWrapper>
 
       <Heading label="Experience" />
 
@@ -34,7 +35,7 @@ export default function Experiences({experienceRef}: {experienceRef: React.RefOb
         
       </div>
 
-    </div>
+    </ExperiencesWrapper>
   )
 }
 

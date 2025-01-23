@@ -1,11 +1,11 @@
-import { backend, database, frontend, languages } from "@/data/skills";
+import { SkillSection, wholeSkills } from "@/data/skills";
 import Heading from "../common/Heading";
-import SkillDiv from "./SkillDiv";
+import SkillsContainer from "./SkillsContainer";
+import AboutWrapper from "./AboutWrapper";
 
-
-export default function About({ aboutRef }: { aboutRef: React.RefObject<HTMLDivElement | null> }) {
+export default function About() {
   return (
-    <div ref={aboutRef} className="flex flex-col gap-y-5 pt-8">
+    <AboutWrapper>
 
       <Heading label="About Me" />
 
@@ -15,29 +15,16 @@ export default function About({ aboutRef }: { aboutRef: React.RefObject<HTMLDivE
 
         <h1 className="self-start text-gradient text-5xl">Skills: </h1>
 
-        <SkillDiv 
-          label="Languages:"
-          skills={languages} 
-        />
-
-        <SkillDiv 
-          label="Frontend:"
-          skills={frontend} 
-        />
-
-        <SkillDiv 
-          label="Backend:"
-          skills={backend} 
-        />
-
-        <SkillDiv 
-          label="Database:"
-          skills={database} 
-        />
+        {wholeSkills.map((section: SkillSection) => (
+          <SkillsContainer
+            key={section.label}
+            section={section}
+          />
+        ))}
 
       </div>
 
-    </div>
+    </AboutWrapper>
   )
 }
 
