@@ -21,7 +21,7 @@ export interface Projects{
 export const projects: Projects[] = [
     {
         name: "Food Delivery Website",
-        link: "https://food-delivery09.netlify.app",
+        link: "https://tomato-blond.vercel.app",
         photo: FoodDeliveryWebsite,
         description1: "Developed a full-stack food delivery website where users can order their foods. They need to be logged in to add foods in their cart and finally can make order by putting their delivery information. They will get update of their order status in real time. Users can login using google, github and credentials and responsive UI has been applied for an engaging user experience.",
 
@@ -29,7 +29,7 @@ export const projects: Projects[] = [
     },
     {
         name: "Food Delivery Website - Admin",
-        link: "https://food-delivery-admin09.netlify.app",
+        link: "https://tomato-admin-mu.vercel.app",
         photo: FoodDeliveryWebsiteAdmin,
         description1: "Developed a full-stack food delivery admin website where admins can control the food creation, deletion of the main website and also can update the status of the order. Admins can login using google, github and credentials and responsive UI has been applied for an engaging user experience.",
 
