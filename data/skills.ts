@@ -10,6 +10,7 @@ import NodeJS from "@/icons/NodeJS";
 import ExpressJS from "@/icons/ExpressJS";
 import MongoDB from "@/icons/MongoDB";
 import Firebase from "@/icons/Firebase";
+import NestJS from "@/icons/NestJS";
 
 export interface Base {
     icon: FC,
@@ -63,6 +64,10 @@ const backend: Base[] = [
     {
         icon: ExpressJS,
         name: "Express JS"
+    },
+    {
+        icon: NestJS,
+        name: "Nest JS"
     }
 ]
 
