@@ -11,6 +11,7 @@ import ExpressJS from "@/icons/ExpressJS";
 import MongoDB from "@/icons/MongoDB";
 import Firebase from "@/icons/Firebase";
 import NestJS from "@/icons/NestJS";
+import Python from "@/icons/Python";
 
 export interface Base {
     icon: FC,
@@ -30,7 +31,11 @@ const languages: Base[] = [
     {
         icon: Javascript,
         name: "Javascript"
-    }
+    },
+    {
+        icon: Python,
+        name: "Python"
+    },
 ]
 
 const frontend: Base[] = [
