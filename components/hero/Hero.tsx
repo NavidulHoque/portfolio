@@ -16,7 +16,7 @@ export default function Hero() {
 
       <h1 className="text-45-semibold lg:text-[60px] text-center">
 
-        <span className="bg-gradient-text bg-clip-text text-transparent">I'm Md.Navidul Hoque</span>, MERN Stack developer from Bangladesh.
+        <span className="bg-gradient-text bg-clip-text text-transparent">I'm Md.Navidul Hoque</span>, Full Stack developer from Bangladesh.
         
       </h1>
 
