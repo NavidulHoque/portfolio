@@ -9,7 +9,7 @@ export default function About() {
 
       <Heading label="About Me" />
 
-      <p className="my-10">I am a MERN Stack Developer who is passionate about making 100% error free dynamic websites. My hands-on experience has strengthened my understanding of web development, particularly in building responsive and dynamic user interfaces. On the backend, I focus on developing robust APIs, handling databases efficiently and implementing secure authentication.</p>
+      <p className="my-10">I am a Full Stack Developer who is passionate about making 100% error free dynamic websites. My hands-on experience has strengthened my understanding of web development, particularly in building responsive and dynamic user interfaces. On the backend, I focus on developing robust APIs, handling databases efficiently and implementing secure authentication.</p>
 
       <div className="flex-column gap-y-10">
 
