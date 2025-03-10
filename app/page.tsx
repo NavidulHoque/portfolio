@@ -26,9 +26,9 @@ export default function Home() {
 
           <About />
 
-          <Projects />
-
           <Experiences />
+
+          <Projects />
 
           <Contact />
 

@@ -1,18 +1,22 @@
 export interface Experiences{
     company: string;
     position: string;
-    role: string;
     duration: string;
-    description: string;
+    descriptions: string[];
 }
 
 
 export const experiences: Experiences[] = [
     {
         company: "Code 19",
-        position: "Intern",
-        role: "Web Developer",
+        position: "Web Developer - Intern",
         duration: "Feb 2023",
-        description: "Was sent there by university for industrial training purpose. Here I created a dashboard using HTML, Tailwind CSS and JavaScript."
+        descriptions: ["Created a dashboard using HTML, Tailwind CSS and Javascript."]
+    },
+    {
+        company: "Bdcalling IT Ltd",
+        position: "Software Engineer",
+        duration: "March 2025 - Present",
+        descriptions: ["Developed and designed RESTful API’s in several services using Nest.js and Express.js", "Designed database(NoSQL) for the responsible services"]
     }
 ]
