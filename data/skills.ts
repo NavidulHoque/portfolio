@@ -1,24 +1,30 @@
 import { FC } from "react";
 import Typescript from "@/icons/Typescript";
 import Javascript from "@/icons/Javascript";
-import HTML from "@/icons/HTML";
-import CSS from "@/icons/CSS";
-import Tailwind from "@/icons/Tailwind";
 import ReactJS from "@/icons/ReactJS";
-import NextJS from "@/icons/NextJS";
 import NodeJS from "@/icons/NodeJS";
 import ExpressJS from "@/icons/ExpressJS";
 import MongoDB from "@/icons/MongoDB";
-import Firebase from "@/icons/Firebase";
 import NestJS from "@/icons/NestJS";
-import Python from "@/icons/Python";
+import Mongoose from "@/icons/Mongoose";
+import Redis from "@/icons/Redis";
+import Docker from "@/icons/Docker";
+import BullQueue from "@/icons/BullQueue";
+import CronJobs from "@/icons/CronJobs";
+import JWT from "@/icons/JWT";
+import Oauth from "@/icons/Oauth";
+import WebSocket from "@/icons/Socket";
+import Postman from "@/icons/Postman";
+import Git from "@/icons/Git";
+import Github from "@/icons/Github";
+import VSCode from "@/icons/VSCode";
 
 export interface Base {
     icon: FC,
     name: string
 }
 
-export interface SkillSection{
+export interface SkillSection {
     label: string;
     skills: Base[];
 }
@@ -31,37 +37,10 @@ const languages: Base[] = [
     {
         icon: Javascript,
         name: "Javascript"
-    },
-    {
-        icon: Python,
-        name: "Python"
-    },
+    }
 ]
 
-const frontend: Base[] = [
-    {
-        icon: HTML,
-        name: "HTML"
-    },
-    {
-        icon: CSS,
-        name: "CSS"
-    },
-    {
-        icon: Tailwind,
-        name: "Tailwind CSS"
-    },
-    {
-        icon: ReactJS,
-        name: "React JS"
-    },
-    {
-        icon: NextJS,
-        name: "Next JS"
-    },
-]
-
-const backend: Base[] = [
+const technologies: Base[] = [
     {
         icon: NodeJS,
         name: "Node JS"
@@ -73,35 +52,80 @@ const backend: Base[] = [
     {
         icon: NestJS,
         name: "Nest JS"
-    }
-]
-
-const database: Base[] = [
+    },
     {
         icon: MongoDB,
         name: "MongoDB"
     },
     {
-        icon: Firebase,
-        name: "Firebase"
+        icon: Mongoose,
+        name: "Mongoose"
+    },
+    {
+        icon: Docker,
+        name: "Docker"
+    },
+    {
+        icon: Redis,
+        name: "Redis"
+    },
+    {
+        icon: BullQueue,
+        name: "Bull Queue"
+    },
+    {
+        icon: CronJobs,
+        name: "Cron Jobs"
+    },
+    {
+        icon: JWT,
+        name: "JWT"
+    },
+    {
+        icon: Oauth,
+        name: "OAuth"
+    },
+    {
+        icon: WebSocket,
+        name: "Web Socket"
+    },
+    {
+        icon: ReactJS,
+        name: "React JS"
     }
 ]
 
-export const wholeSkills: SkillSection[]  = [
+const tools: Base[] = [
+    {
+        icon: Postman,
+        name: "Postman"
+    },
+    {
+        icon: Git,
+        name: "Git"
+    },
+    {
+        icon: Github,
+        name: "Github"
+    },
+    {
+        icon: VSCode,
+        name: "VSCode"
+    },
+]
+
+
+export const wholeSkills: SkillSection[] = [
     {
         label: "Languages",
         skills: languages
     },
     {
-        label: "Frontend",
-        skills: frontend
+        label: "Technologies",
+        skills: technologies
     },
     {
-        label: "Backend",
-        skills: backend
+        label: "Tools",
+        skills: tools
     },
-    {
-        label: "Database",
-        skills: database
-    },  
 ]
