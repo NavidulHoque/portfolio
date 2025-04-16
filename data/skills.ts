@@ -5,8 +5,11 @@ import ReactJS from "@/icons/ReactJS";
 import NodeJS from "@/icons/NodeJS";
 import ExpressJS from "@/icons/ExpressJS";
 import MongoDB from "@/icons/MongoDB";
+import PostgreSQL from "@/icons/PostgreSQL";
+import MySQL from "@/icons/MySQL";
 import NestJS from "@/icons/NestJS";
 import Mongoose from "@/icons/Mongoose";
+import Prisma from "@/icons/Prisma";
 import Redis from "@/icons/Redis";
 import Docker from "@/icons/Docker";
 import BullQueue from "@/icons/BullQueue";
@@ -40,7 +43,7 @@ const languages: Base[] = [
     }
 ]
 
-const technologies: Base[] = [
+const frameworks: Base[] = [
     {
         icon: NodeJS,
         name: "Node JS"
@@ -54,12 +57,34 @@ const technologies: Base[] = [
         name: "Nest JS"
     },
     {
+        icon: ReactJS,
+        name: "React JS"
+    },
+]
+
+const databases: Base[] = [
+    {
         icon: MongoDB,
         name: "MongoDB"
     },
     {
+        icon: PostgreSQL,
+        name: "PostgreSQL"
+    },
+    {
+        icon: MySQL,
+        name: "MySQL"
+    }
+]
+
+const technologies: Base[] = [
+    {
         icon: Mongoose,
         name: "Mongoose"
+    },
+    {
+        icon: Prisma,
+        name: "Prisma"
     },
     {
         icon: Docker,
@@ -88,10 +113,6 @@ const technologies: Base[] = [
     {
         icon: WebSocket,
         name: "Web Socket"
-    },
-    {
-        icon: ReactJS,
-        name: "React JS"
     }
 ]
 
@@ -119,6 +140,14 @@ export const wholeSkills: SkillSection[] = [
     {
         label: "Languages",
         skills: languages
+    },
+    {
+        label: "Frameworks",
+        skills: frameworks
+    },
+    {
+        label: "Databases",
+        skills: databases
     },
     {
         label: "Technologies",
