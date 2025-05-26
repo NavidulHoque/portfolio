@@ -96,7 +96,7 @@ const technologies: Base[] = [
     },
     {
         icon: BullQueue,
-        name: "Bull Queue"
+        name: "BullMQ"
     },
     {
         icon: CronJobs,
