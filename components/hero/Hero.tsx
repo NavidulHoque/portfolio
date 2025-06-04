@@ -16,11 +16,11 @@ export default function Hero() {
 
       <h1 className="text-45-semibold lg:text-[60px] text-center">
 
-        <span className="bg-gradient-text bg-clip-text text-transparent">I'm Md.Navidul Hoque</span>, Software Engineer from Bangladesh.
+        <span className="bg-gradient-text bg-clip-text text-transparent">I'm Md.Navidul Hoque</span>, Backend focused Software Engineer from Bangladesh.
         
       </h1>
 
-      <p className="text-center">I am a fresh graduate from Military Institute of Science and Technology</p>
+      <p className="text-center">I am a recent graduate from Military Institute of Science and Technology</p>
 
       <div className="space-x-4">
 
