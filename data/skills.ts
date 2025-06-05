@@ -1,7 +1,6 @@
 import { FC } from "react";
 import Typescript from "@/icons/Typescript";
 import Javascript from "@/icons/Javascript";
-import ReactJS from "@/icons/ReactJS";
 import NodeJS from "@/icons/NodeJS";
 import ExpressJS from "@/icons/ExpressJS";
 import MongoDB from "@/icons/MongoDB";
@@ -21,6 +20,8 @@ import Postman from "@/icons/Postman";
 import Git from "@/icons/Git";
 import Github from "@/icons/Github";
 import VSCode from "@/icons/VSCode";
+import Cloudinary from "@/icons/Cloudinary";
+import Stripe from "@/icons/Stripe";
 
 export interface Base {
     icon: FC,
@@ -55,11 +56,7 @@ const frameworks: Base[] = [
     {
         icon: NestJS,
         name: "Nest JS"
-    },
-    {
-        icon: ReactJS,
-        name: "React JS"
-    },
+    }
 ]
 
 const databases: Base[] = [
@@ -68,24 +65,24 @@ const databases: Base[] = [
         name: "MongoDB"
     },
     {
+        icon: Mongoose,
+        name: "Mongoose"
+    },
+    {
         icon: PostgreSQL,
         name: "PostgreSQL"
     },
     {
         icon: MySQL,
         name: "MySQL"
-    }
-]
-
-const technologies: Base[] = [
-    {
-        icon: Mongoose,
-        name: "Mongoose"
     },
     {
         icon: Prisma,
         name: "Prisma"
     },
+]
+
+const technologies: Base[] = [
     {
         icon: Docker,
         name: "Docker"
@@ -113,6 +110,14 @@ const technologies: Base[] = [
     {
         icon: WebSocket,
         name: "Web Socket"
+    },
+    {
+        icon: Stripe,
+        name: "Stripe"
+    },
+    {
+        icon: Cloudinary,
+        name: "Cloudinary"
     }
 ]
 
@@ -150,7 +155,7 @@ export const wholeSkills: SkillSection[] = [
         skills: databases
     },
     {
-        label: "Technologies",
+        label: "Tools & Platforms",
         skills: technologies
     },
     {

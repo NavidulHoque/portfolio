@@ -16,7 +16,13 @@ export const experiences: Experiences[] = [
     {
         company: "Bdcalling IT Ltd",
         position: "Software Engineer",
-        duration: "March 2025 - Present",
+        duration: "March 2025 - May 2025",
         descriptions: ["Developed and designed RESTful API’s in several services using Nest.js and Express.js", "Designed database(NoSQL) for the responsible services"]
-    }
+    },
+    {
+        company: "Bulipe Tech Ltd",
+        position: "Software Engineer",
+        duration: "June 2025 - Present",
+        descriptions: ["Developed and designed RESTful API’s in several services using Nest.js and Express.js", "Designed database(NoSQL) for the responsible services"]
+    },
 ]
