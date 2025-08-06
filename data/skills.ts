@@ -22,6 +22,8 @@ import Github from "@/icons/Github";
 import VSCode from "@/icons/VSCode";
 import Cloudinary from "@/icons/Cloudinary";
 import Stripe from "@/icons/Stripe";
+import PHP from "@/icons/PHP";
+import Laravel from "@/icons/Laravel";
 
 export interface Base {
     icon: FC,
@@ -41,6 +43,10 @@ const languages: Base[] = [
     {
         icon: Javascript,
         name: "Javascript"
+    },
+    {
+        icon: PHP,
+        name: "PHP"
     }
 ]
 
@@ -56,6 +62,10 @@ const frameworks: Base[] = [
     {
         icon: NestJS,
         name: "Nest JS"
+    },
+    {
+        icon: Laravel,
+        name: "Laravel"
     }
 ]
 
