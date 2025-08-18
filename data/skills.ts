@@ -24,6 +24,7 @@ import Cloudinary from "@/icons/Cloudinary";
 import Stripe from "@/icons/Stripe";
 import PHP from "@/icons/PHP";
 import Laravel from "@/icons/Laravel";
+import { ApacheKafka } from "@/icons/ApacheKafka";
 
 export interface Base {
     icon: FC,
@@ -104,6 +105,10 @@ const technologies: Base[] = [
     {
         icon: BullQueue,
         name: "BullMQ"
+    },
+    {
+        icon: ApacheKafka,
+        name: "Apache Kafka"
     },
     {
         icon: CronJobs,
