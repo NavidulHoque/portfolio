@@ -5,24 +5,15 @@ export interface Experiences{
     descriptions: string[];
 }
 
-
 export const experiences: Experiences[] = [
-    {
-        company: "Code 19",
-        position: "Web Developer - Intern",
-        duration: "Feb 2023",
-        descriptions: ["Created a dashboard using HTML, Tailwind CSS and Javascript."]
-    },
     {
         company: "Bdcalling IT Ltd",
         position: "Software Engineer",
-        duration: "January 2025 - May 2025",
-        descriptions: ["Developed and designed RESTful API’s in several services using Nest.js and Express.js", "Designed database(NoSQL) for the responsible services"]
-    },
-    // {
-    //     company: "Bulipe Tech Ltd",
-    //     position: "Software Engineer",
-    //     duration: "June 2025 - Present",
-    //     descriptions: ["Developed and designed RESTful API’s in several services using Nest.js and Express.js", "Designed database(NoSQL) for the responsible services"]
-    // },
+        duration: "January 2025 - June 2025",
+        descriptions: ["Built authentication and authorization systems using JWT and OAuth2 providers (Google, Facebook).", 
+            "Designed and implemented scalable REST APIs for production environments.",
+            "Developed backend services for internal tools with a focus on performance optimization.",
+            "Created and tested RESTful APIs using Postman, ensuring reliability and efficiency."
+        ]
+    }
 ]
