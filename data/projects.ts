@@ -1,7 +1,7 @@
 export const projects = [
     {
         name: "Doctors Appointment Booking System",
-        github: "https://github.com/NavidulHoque/Doctors_Appointment_Booking_System",
+        github: "https://github.com/NavidulHoque/Doctors_Appointment_Management_System",
         description: ["Built real-time chat & notifications with WebSocket, Redis, and BullMQ.", 
             "Designed asynchronous data processing using Apache Kafka for high throughput.",
             "Automated appointment status updates, background jobs, and activity tracking with BullMQ and Cron Jobs.",
