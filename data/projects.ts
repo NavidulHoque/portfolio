@@ -6,6 +6,8 @@ export const projects = [
             "Designed asynchronous data processing using Apache Kafka for high throughput.",
             "Automated appointment status updates, background jobs, and activity tracking with BullMQ and Cron Jobs.",
             "Integrated Stripe Connect for secure multi-vendor payments and doctor payouts.",
+            "Implemented Redis caching and rate limiting to improve performance, prevent abuse, and reduce database load.",
+            "Developed email and SMS notifications for user engagement and system alerts.",
             "Used Docker for containerized local dev with Redis, PostgreSQL and Kafka.",
             "Implemented role-based access control and class-based validation for robust architecture."
         ],
@@ -18,8 +20,7 @@ export const projects = [
         description: ["Designed a backend system for a ecommerce platform using Laravel.", 
             "Used MySQL with PHPMyAdmin for database management.",
             "Implemented role based authentication using JWT.",
-            "Containerized the entire project with Docker.",
-            "Implemented sending notifications using Redis."
+            "Containerized the entire project with Docker."
         ],
         stack: ["PHP", "Laravel", "MySQL", "JWT", "Redis", "Docker", "PHPMyAdmin"],
         tag: "Work in Progress"
