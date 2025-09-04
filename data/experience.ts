@@ -9,11 +9,11 @@ export const experiences: Experiences[] = [
     {
         company: "Bdcalling IT Ltd",
         position: "Software Engineer",
-        duration: "January 2025 - June 2025",
-        descriptions: ["Built authentication and authorization systems using JWT and OAuth2 providers (Google, Facebook).", 
-            "Designed and implemented scalable REST APIs for production environments.",
-            "Developed backend services for internal tools with a focus on performance optimization.",
-            "Created and tested RESTful APIs using Postman, ensuring reliability and efficiency."
+        duration: "December 2024 - July 2025",
+        descriptions: ["Implemented authentication and authorization systems with JWT and OAuth2 (Google, Facebook).", 
+            "Designed and optimized REST APIs for production environments with 99.9% uptime.",
+            "Developed performance-focused backend services for internal tools, increasing operational efficiency.",
+            "Improved maintainability and scalability by applying clean architecture principles."
         ]
     }
 ]
