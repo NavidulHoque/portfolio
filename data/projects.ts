@@ -15,14 +15,15 @@ export const projects = [
         tag: "Featured"
     },
     {
-        name: "Multi Vendor Ecommorce Platform",
-        github: "https://github.com/NavidulHoque/ecommerce-laravel",
-        description: ["Established scalable backend system supporting 100+ vendors to manage products, orders, and payments.", 
-            "Enforced role-based authentication with JWT, securing access for admins, vendors, and customers.",
-            "Containerized the project with Docker, ensuring consistent deployments across environments.",
-            "Expanded APIs for product search, order tracking, and vendor dashboards, handling thousands of weekly transactions."
+        name: "AI Powered Document Assisstant System",
+        github: "https://github.com/NavidulHoque/AI_powered_document_assisstant",
+        description: ["Developed AI-powered document processing backend using NestJS, enabling intelligent document management and retrieval.", 
+            "Integrated OpenAI APIs to generate summaries and insights from uploaded documents, improving information extraction efficiency.",
+            "Built file upload and storage system using Cloudinary, supporting images, PDFs, and videos in a unified workflow.",
+            "Containerized PostgreSQL with Docker, maintaining consistent development and deployment environments across services.",
+            "Applied logging and error monitoring with NestJS Logger, ensuring easier debugging and system reliability."
         ],
-        stack: ["PHP", "Laravel", "MySQL", "JWT", "Redis", "Docker", "phpMyAdmin"],
+        stack: ["NestJS", "TypeScript", "PostgreSQL", "Prisma", "JWT", "Docker", "OpenAI", "Cloudinary", "REST API"],
         tag: "Work in Progress"
     },
     {

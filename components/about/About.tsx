@@ -9,7 +9,7 @@ export default function About() {
 
       <Heading label="About Me" />
 
-      <p className="my-10">I am a Software Engineer with a strong passion for backend development and building reliable, error-free systems. My hands-on experience has deepened my understanding of server-side technologies, including developing robust APIs, managing databases efficiently, and implementing secure authentication for dynamic web applications.</p>
+      <p className="my-10">I am a Software Engineer with a strong passion for backend development and building reliable, error-free systems. My hands-on experience has deepened my understanding of server-side technologies, including developing robust APIs, managing databases efficiently, and implementing secure authentication for dynamic web applications. I am also enthusiastic about integrating AI models into backend systems, leveraging tools like OpenAI to create smarter, more efficient, and impactful applications.</p>
 
       <div className="flex-column gap-y-10">
 
