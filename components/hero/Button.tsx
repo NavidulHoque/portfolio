@@ -3,7 +3,7 @@
 export default function Button() {
 
     const downloadResume = () => {
-        window.open("/resume/resume.docx", "_blank")
+        window.open("/resume/resume.pdf", "_blank")
     }
 
     return (
