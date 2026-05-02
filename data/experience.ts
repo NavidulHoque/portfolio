@@ -7,13 +7,22 @@ export interface Experiences{
 
 export const experiences: Experiences[] = [
     {
-        company: "Bdcalling IT Ltd",
-        position: "Software Engineer",
-        duration: "December 2024 - July 2025",
-        descriptions: ["Implemented authentication and authorization systems with JWT and OAuth2 (Google, Facebook).", 
-            "Designed and optimized REST APIs for production environments with 99.9% uptime.",
-            "Developed performance-focused backend services for internal tools, increasing operational efficiency.",
-            "Improved maintainability and scalability by applying clean architecture principles."
+        company: "TulipTech Ltd",
+        position: "Backend Software Engineer",
+        duration: "November 2025 – May 2026",
+        descriptions: ["Engineered production-grade NestJS backends within an existing monorepo architecture, delivering scalable REST APIs and type-safe contracts across multiple internal products.", 
+            "Contributed to a shared monorepo architecture using Turborepo, reducing backend code duplication and enabling reuse of validation, database, and API contract modules.",
+            "Worked with oRPC and Scalar Reference UI for API documentation, implementing type-safe API contracts using Zod schemas.",
+            "Used Supabase Auth, Realtime, and Storage to implement authentication, real-time features, and file storage across the backend."
+        ]
+    },
+    {
+        company: "Chetona",
+        position: "Backend Developer",
+        duration: "January 2025 – October 2025",
+        descriptions: ["Implemented JWT-based authentication and authorization, securing APIs for multiple user roles.", 
+            "Designed and optimized REST APIs for production using Express.js.",
+            "Improved system maintainability by restructuring backend using clean architecture principles and modular design."
         ]
     }
 ]

@@ -2,38 +2,29 @@ export const projects = [
     {
         name: "Doctors Appointment Booking System",
         github: "https://github.com/NavidulHoque/Doctors_Appointment_Booking_System",
-        description: ["Built real-time chat & notifications using WebSocket, Redis, and BullMQ, supporting 1,000+ concurrent users.", 
-            "Implemented asynchronous data processing with Apache Kafka, handling 10K+ traffic events daily.",
-            "Automated appointment updates, background jobs, and activity tracking with BullMQ and Cron Jobs, decreasing manual effort by 30%.",
-            "Integrated Stripe Connect for secure multi-vendor payments, enabling instant payouts to 50+ doctors.",
-            "Optimized performance with Redis caching and rate limiting, reducing API response time by 60% and preventing abuse.",
-            "Increased user engagement by implementing email/SMS notifications, improving response rates by 25%.",
-            "Containerized the platform with Docker, ensuring consistent development environments with Redis, PostgreSQL, and Kafka.",
-            "Implemented role-based access control and class-based validation for robust architecture."
+        openapi: "https://doctors-appointment-booking-system-x428.onrender.com/api/docs",
+        description: ["Architected a full-featured appointment booking API with NestJS and Fastify covering role based access for patients, doctors and admins.", 
+            "Built a real-time messaging and notification system using Supabase Realtime broadcast channels replacing WebSocket infrastructure without a dedicated server.",
+            "Integrated Stripe Express Connect for multi vendor payment processing enabling per appointment checkout sessions with direct payouts to individual doctors.",
+            "Applied email verification and password reset flows using Supabase Auth with session tracking.",
+            "Applied a two-step signed URL file upload system via Supabase Storage.",
+            "Automated appointment lifecycle transitions using NestJS cron jobs including inactive user cleanup and expired session removal.",
+            "Implemented Zod validation across all DTOs in a shared validation package ensuring consistent input enforcement across the monorepo."
         ],
-        stack: ["NestJS", "Prisma", "TypeScript", "PostgreSQL", "Redis", "Docker", "Kafka", "BullMQ", "WebSocket", "Stripe", "Cloudinary", "JWT", "Cron Jobs"],
+        stack: ["NestJS", "Fastify", "TypeORM", "TypeScript", "PostgreSQL", "Supabase (Auth, Realtime, Storage)", "Stripe", "Cron Jobs", "Nodemailer", "Zod", "REST API"],
         tag: "Featured"
     },
     {
-        name: "AI Powered Document Assisstant System",
-        github: "https://github.com/NavidulHoque/AI_powered_document_assisstant",
-        description: ["Developed AI-powered document processing backend using NestJS, enabling intelligent document management and retrieval.", 
-            "Integrated OpenAI APIs to generate summaries and insights from uploaded documents, improving information extraction efficiency.",
-            "Built file upload and storage system using Cloudinary, supporting images, PDFs, and videos in a unified workflow.",
-            "Containerized PostgreSQL with Docker, maintaining consistent development and deployment environments across services.",
-            "Applied logging and error monitoring with NestJS Logger, ensuring easier debugging and system reliability."
+        name: "TaskFlow — Project & Task Management",
+        github: "https://github.com/NavidulHoque/taskflow",
+        openapi: "https://taskflow-y6e0.onrender.com/api/docs",
+        description: ["Designed and built a type-safe task management backend using oRPC procedures with explicit Zod input/output schemas.", 
+            "Used Scalar Reference UI via the oRPC OpenAPI plugin producing a modern interactive API docs experience auto generated from Zod schemas.",
+            "Modeled a clean monorepo with Turborepo, separating validation, database, oRPC routers and Supabase clients into independent packages consumed by the NestJS app.",
+            "Implemented full project and task lifecycle management, enabling efficient handling of user tasks and bulk operations.",
+            "Integrated Supabase OAuth (Google) alongside email/password auth with a unified session model covering token refresh and logout."
         ],
-        stack: ["NestJS", "TypeScript", "PostgreSQL", "Prisma", "JWT", "Docker", "OpenAI", "Cloudinary", "REST API"],
-        tag: "Work in Progress"
-    },
-    {
-        name: "House Security Check System",
-        github: "https://github.com/NavidulHoque/House_Security_System_Backend",
-        description: ["Created RESTful APIs for household security checks, serving 500+ homes securely.", 
-            "Applied JWT authentication with role-based access control, achieving 100% authorization coverage.",
-            "Improved data quality by applying validation middleware, cutting invalid requests by 40%."
-        ],
-        stack: ["Javascript", "ExpressJS", "MongoDB", "Mongoose", "JWT"],
-        tag: "Experience"
+        stack: ["NestJS", "Fastify", "TypeScript", "PostgreSQL", "Drizzle ORM", "Supabase (Auth, Storage)", "oRPC", "Zod"],
+        tag: "Featured"
     }
 ]

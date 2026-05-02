@@ -5,24 +5,20 @@ import NodeJS from "@/icons/NodeJS";
 import ExpressJS from "@/icons/ExpressJS";
 import MongoDB from "@/icons/MongoDB";
 import PostgreSQL from "@/icons/PostgreSQL";
-import MySQL from "@/icons/MySQL";
 import NestJS from "@/icons/NestJS";
 import Mongoose from "@/icons/Mongoose";
-import Prisma from "@/icons/Prisma";
 import Redis from "@/icons/Redis";
 import Docker from "@/icons/Docker";
-import BullQueue from "@/icons/BullQueue";
 import CronJobs from "@/icons/CronJobs";
 import JWT from "@/icons/JWT";
-import Oauth from "@/icons/Oauth";
 import WebSocket from "@/icons/Socket";
 import Postman from "@/icons/Postman";
 import Git from "@/icons/Git";
 import Github from "@/icons/Github";
 import VSCode from "@/icons/VSCode";
-import Cloudinary from "@/icons/Cloudinary";
 import Stripe from "@/icons/Stripe";
-import { ApacheKafka } from "@/icons/ApacheKafka";
+import { Bun } from "@/icons/Bun";
+import Supabase from "@/icons/Supabase";
 
 export interface Base {
     icon: FC,
@@ -57,6 +53,10 @@ const frameworks: Base[] = [
     {
         icon: NestJS,
         name: "Nest JS"
+    },
+    {
+        icon: Bun,
+        name: "Bun.js"
     }
 ]
 
@@ -72,15 +72,7 @@ const databases: Base[] = [
     {
         icon: PostgreSQL,
         name: "PostgreSQL"
-    },
-    {
-        icon: MySQL,
-        name: "MySQL"
-    },
-    {
-        icon: Prisma,
-        name: "Prisma"
-    },
+    }
 ]
 
 const technologies: Base[] = [
@@ -93,24 +85,12 @@ const technologies: Base[] = [
         name: "Redis"
     },
     {
-        icon: BullQueue,
-        name: "BullMQ"
-    },
-    {
-        icon: ApacheKafka,
-        name: "Apache Kafka"
-    },
-    {
         icon: CronJobs,
         name: "Cron Jobs"
     },
     {
         icon: JWT,
         name: "JWT"
-    },
-    {
-        icon: Oauth,
-        name: "OAuth"
     },
     {
         icon: WebSocket,
@@ -121,9 +101,9 @@ const technologies: Base[] = [
         name: "Stripe"
     },
     {
-        icon: Cloudinary,
-        name: "Cloudinary"
-    }
+        icon: Supabase,
+        name: "Supabase"
+    },
 ]
 
 const tools: Base[] = [

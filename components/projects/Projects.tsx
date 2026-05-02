@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <ProjectsWrapper>
       <Heading label="Projects" />
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-14">
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-14">
         {projects.map((project) => (
           <div key={project.name} className="flex flex-col gap-y-4">
             <p className="self-start bg-gradient-text bg-clip-text text-transparent text-[23px] font-semibold">
@@ -33,14 +33,24 @@ export default function Projects() {
               ))}
             </div>
 
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 flex items-center gap-2 text-blue-500 hover:text-pink-500 transition"
-            >
-              View Code <ExternalLink size={16} />
-            </a>
+            <div className="flex gap-x-5">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center gap-2 text-blue-500 hover:text-pink-500 transition"
+              >
+                View Code <ExternalLink size={16} />
+              </a>
+              <a
+                href={project.openapi}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center gap-2 text-blue-500 hover:text-pink-500 transition"
+              >
+                View API Docs <ExternalLink size={16} />
+              </a>
+            </div>
           </div>
         ))}
       </div>
