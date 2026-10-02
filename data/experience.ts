@@ -11,10 +11,7 @@ export const experiences: Experiences[] = [
         position: "Junior Software Engineer",
         duration: "November 2025 – May 2026",
         descriptions: [
-            "Built and maintained backend APIs for multiple internal products using NestJS and TypeScript.",
-            "Designed PostgreSQL schemas and optimized SQL queries for reliable, high performance access to production data.",
-            "Used Supabase Realtime to handle live data updates across the system.",
-            "Contributed to shared validation logic using Zod to keep data consistent across services."
+            "Worked on backend systems for internal products, contributing to APIs, databases, real time data handling, and shared data validation processes. This experience strengthened my understanding of how business applications generate, organize and process operational data."
         ]
     },
     {
@@ -22,9 +19,7 @@ export const experiences: Experiences[] = [
         position: "Backend Developer",
         duration: "December 2024 – October 2025",
         descriptions: [
-            "Built REST APIs using Express.js to handle data requests across different user roles.",
-            "Designed and structured MongoDB schemas to keep data organized and queries efficient.",
-            "Refactored the backend codebase using clean architecture to make it easier to maintain and scale."
+            "Developed and maintained backend services supporting different user roles and business workflows. Working with APIs, databases, and backend architecture gave me practical exposure to how software systems support day to day operations and how structured data flows through those systems."
         ]
     }
 ]
