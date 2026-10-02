@@ -17,7 +17,7 @@ export default function Contact() {
 
           <h2 className="self-start bg-gradient-text bg-clip-text text-transparent text-[50px] leading-[50px] font-semibold">Let's talk</h2>
 
-          <p className="my-5">I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
+          <p className="my-5">I'm currently open to data analytics and business intelligence opportunities. Feel free to send me a message about a role, a project or a business problem you want to solve with data. You can contact me anytime.</p>
 
           <div className="flex flex-col gap-y-6">
 

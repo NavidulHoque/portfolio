@@ -11,6 +11,7 @@ export interface RefContextType {
     aboutRef: RefObject<HTMLDivElement | null>;
     experienceRef: RefObject<HTMLDivElement | null>;
     projectsRef: RefObject<HTMLDivElement | null>;
+    approachRef: RefObject<HTMLDivElement | null>;
     contactRef: RefObject<HTMLDivElement | null>;
     listItems: Item[];
 }
@@ -27,12 +28,18 @@ export default function RefProvider({ children }: { children: React.ReactNode })
 
     const projectsRef = useRef<HTMLDivElement | null>(null)
 
+    const approachRef = useRef<HTMLDivElement | null>(null)
+
     const contactRef = useRef<HTMLDivElement | null>(null)
 
     const listItems: Item[] = [
         {
             label: "About Me",
             ref: aboutRef
+        },
+        {
+            label: "Approach",
+            ref: approachRef
         },
         {
             label: "Projects",
@@ -49,7 +56,7 @@ export default function RefProvider({ children }: { children: React.ReactNode })
     ]
 
     return (
-        <RefContext.Provider value={{ aboutRef, experienceRef, projectsRef, contactRef, listItems }}>
+        <RefContext.Provider value={{ aboutRef, experienceRef, projectsRef, approachRef, contactRef, listItems }}>
             {children}
         </RefContext.Provider>
     )

@@ -5,6 +5,7 @@ import Experiences from "../components/experiences/Experiences";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Projects from "../components/projects/Projects";
+import Approach from "../components/approach/Approach";
 import ConditionallyRenderSidebar from "@/components/sidebar/ConditionallyRenderSidebar";
 import ContextProvider from "@/components/context/ContextProvider";
 
@@ -26,9 +27,11 @@ export default function Home() {
 
           <About />
 
-          <Experiences />
+          <Approach />
 
           <Projects />
+
+          <Experiences />
 
           <Contact />
 

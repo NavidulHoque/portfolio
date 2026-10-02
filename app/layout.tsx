@@ -10,8 +10,8 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "My personal website",
+  title: "Md. Navidul Hoque | Data Analytics Portfolio",
+  description: "CSE graduate focused on data analytics, business intelligence and business problem solving.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

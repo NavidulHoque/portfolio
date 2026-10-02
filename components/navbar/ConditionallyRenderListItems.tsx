@@ -12,7 +12,7 @@ export default function ConditionallyRenderListItems() {
   const {listItems} = useRefCustom()
 
   return (
-    windowInnerWidth >= 640 ? (
+    windowInnerWidth >= 1024 ? (
       <>
         <ul className="flex-center md:gap-x-10 gap-x-6">
 

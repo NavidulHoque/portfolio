@@ -2,23 +2,13 @@ import { FC } from "react";
 import Typescript from "@/icons/Typescript";
 import Javascript from "@/icons/Javascript";
 import NodeJS from "@/icons/NodeJS";
-import ExpressJS from "@/icons/ExpressJS";
-import MongoDB from "@/icons/MongoDB";
 import PostgreSQL from "@/icons/PostgreSQL";
 import NestJS from "@/icons/NestJS";
-import Mongoose from "@/icons/Mongoose";
-import Redis from "@/icons/Redis";
 import Docker from "@/icons/Docker";
-import CronJobs from "@/icons/CronJobs";
-import JWT from "@/icons/JWT";
-import WebSocket from "@/icons/Socket";
-import Postman from "@/icons/Postman";
-import Git from "@/icons/Git";
-import Github from "@/icons/Github";
-import VSCode from "@/icons/VSCode";
-import Stripe from "@/icons/Stripe";
-import { Bun } from "@/icons/Bun";
-import Supabase from "@/icons/Supabase";
+import {
+    Python, Pandas, Numpy, ScikitLearn, Excel, Statistics, PowerBI, Matplotlib,
+    MachineLearning, ArtificialIntelligence
+} from "@/icons/DataIcons";
 
 export interface Base {
     icon: FC,
@@ -30,121 +20,34 @@ export interface SkillSection {
     skills: Base[];
 }
 
-const languages: Base[] = [
-    {
-        icon: Typescript,
-        name: "Typescript"
-    },
-    {
-        icon: Javascript,
-        name: "Javascript"
-    }
+const dataAnalytics: Base[] = [
+    { icon: Python, name: "Python" },
+    { icon: PostgreSQL, name: "SQL" },
+    { icon: Pandas, name: "Pandas" },
+    { icon: Numpy, name: "NumPy" },
+    { icon: Statistics, name: "Statistics" },
+    { icon: PowerBI, name: "Power BI" },
+    { icon: Excel, name: "Excel" },
+    { icon: Matplotlib, name: "Matplotlib" },
 ]
 
-const frameworks: Base[] = [
-    {
-        icon: NodeJS,
-        name: "Node JS"
-    },
-    {
-        icon: ExpressJS,
-        name: "Express JS"
-    },
-    {
-        icon: NestJS,
-        name: "Nest JS"
-    },
-    {
-        icon: Bun,
-        name: "Bun.js"
-    }
+const machineLearning: Base[] = [
+    { icon: MachineLearning, name: "Machine Learning" },
+    { icon: ArtificialIntelligence, name: "Artificial Intelligence" },
+    { icon: ScikitLearn, name: "Scikit Learn" },
 ]
 
-const databases: Base[] = [
-    {
-        icon: MongoDB,
-        name: "MongoDB"
-    },
-    {
-        icon: Mongoose,
-        name: "Mongoose"
-    },
-    {
-        icon: PostgreSQL,
-        name: "PostgreSQL"
-    }
+const engineering: Base[] = [
+    { icon: Typescript, name: "Typescript" },
+    { icon: Javascript, name: "Javascript" },
+    { icon: NodeJS, name: "Node JS" },
+    { icon: NestJS, name: "Nest JS" },
+    { icon: PostgreSQL, name: "PostgreSQL" },
+    { icon: Docker, name: "Docker" },
 ]
-
-const technologies: Base[] = [
-    {
-        icon: Docker,
-        name: "Docker"
-    },
-    {
-        icon: Redis,
-        name: "Redis"
-    },
-    {
-        icon: CronJobs,
-        name: "Cron Jobs"
-    },
-    {
-        icon: JWT,
-        name: "JWT"
-    },
-    {
-        icon: WebSocket,
-        name: "Web Socket"
-    },
-    {
-        icon: Stripe,
-        name: "Stripe"
-    },
-    {
-        icon: Supabase,
-        name: "Supabase"
-    },
-]
-
-const tools: Base[] = [
-    {
-        icon: Postman,
-        name: "Postman"
-    },
-    {
-        icon: Git,
-        name: "Git"
-    },
-    {
-        icon: Github,
-        name: "Github"
-    },
-    {
-        icon: VSCode,
-        name: "VSCode"
-    },
-]
-
 
 export const wholeSkills: SkillSection[] = [
-    {
-        label: "Languages",
-        skills: languages
-    },
-    {
-        label: "Frameworks",
-        skills: frameworks
-    },
-    {
-        label: "Databases",
-        skills: databases
-    },
-    {
-        label: "Tools & Platforms",
-        skills: technologies
-    },
-    {
-        label: "Tools",
-        skills: tools
-    },
+    { label: "Data Analytics", skills: dataAnalytics },
+    { label: "Machine Learning", skills: machineLearning },
+    { label: "Engineering Background", skills: engineering },
 ]

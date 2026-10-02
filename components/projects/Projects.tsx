@@ -14,7 +14,10 @@ export default function Projects() {
               {project.name}
             </p>
 
-            <span className="text-sm text-blue-600 font-medium">{project.tag}</span>
+            <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm font-medium">
+              <span className="text-blue-600">{project.tag}</span>
+              {project.status && <span className="text-pink-500">{project.status}</span>}
+            </div>
 
             <ul className="list-disc ml-5 marker:text-pink-500 text-blue-500 space-y-2">
               {project.description.map((point, idx) => (
@@ -33,23 +36,18 @@ export default function Projects() {
               ))}
             </div>
 
-            <div className="flex gap-x-5">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 flex items-center gap-2 text-blue-500 hover:text-pink-500 transition"
-              >
-                View Code <ExternalLink size={16} />
-              </a>
-              <a
-                href={project.openapi}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 flex items-center gap-2 text-blue-500 hover:text-pink-500 transition"
-              >
-                View API Docs <ExternalLink size={16} />
-              </a>
+            <div className="flex flex-wrap gap-x-5">
+              {project.links.map((link) => (
+                <a
+                  key={link.url}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 flex items-center gap-2 text-blue-500 hover:text-pink-500 transition"
+                >
+                  {link.label} <ExternalLink size={16} />
+                </a>
+              ))}
             </div>
           </div>
         ))}
