@@ -24,7 +24,7 @@ export const projects: Project[] = [
         ],
         stack: ["Excel", "Python", "Pandas", "Power BI (in progress)"],
         links: [
-            { label: "View Code", url: "https://github.com/NavidulHoque/ecommerce_sales_data" },
+            { label: "Project Details", url: "https://github.com/NavidulHoque/ecommerce_sales_data" },
             { label: "Detailed Analysis Report", url: "https://drive.google.com/file/d/185Hsw0qwJqBCVa8sTLtaCxbsOSdiS0uW/view?usp=sharing" }
         ]
     },
@@ -39,7 +39,7 @@ export const projects: Project[] = [
         ],
         stack: ["Python", "Pandas", "Matplotlib", "Power BI (in progress)", "Excel", "Scikit Learn", "Statistics", "Machine Learning"],
         links: [
-            { label: "View Code", url: "https://github.com/NavidulHoque/healthcare_appointment_analysis" },
+            { label: "Project Details", url: "https://github.com/NavidulHoque/healthcare_appointment_analysis" },
             { label: "Detailed Analysis Report", url: "https://drive.google.com/file/d/1PnTLh_ZEAL63WnPt3WAY5iU_O9Lr-JdM/view" },
             { label: "Predictive ML Analysis (No Show)", url: "https://github.com/NavidulHoque/healthcare_appointment_analysis/blob/main/python-analysis/02_no_show_predictive_modeling.ipynb" },
             { label: "Predictive ML Analysis (Waiting Days)", url: "https://github.com/NavidulHoque/healthcare_appointment_analysis/blob/main/python-analysis/03_wait_days_predictive_modeling.ipynb" }
