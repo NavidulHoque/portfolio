@@ -6,7 +6,7 @@ import TextArea from "./TextArea"
 import { useRef } from "react"
 import { errorToast } from "@/lib/utils"
 import { successToast } from '@/lib/utils';
-import { sendEmail } from "@/app/actions/form"
+import { sendEmail } from "@/lib/sendEmail"
 
 export default function Form() {
 
@@ -27,13 +27,17 @@ export default function Form() {
                 if (result.success) {
                     successToast(result.message)
                 }
+
+                else {
+                    errorToast(result.message)
+                }
             }
 
             catch (error) {
 
-                if (error instanceof Error) {
-                    errorToast(error.message);
-                }
+                console.error("Contact form error:", error)
+
+                errorToast("Unable to send your message right now. Please try again later.")
             }
         }
 

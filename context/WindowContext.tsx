@@ -17,6 +17,8 @@ export default function WindowProvider({ children }: { children: React.ReactNode
     const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
 
     useEffect(() => {
+        // Intentional: width starts at 0 so server and first client render match (no hydration mismatch), then syncs on mount.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setWindowInnerWidth(window.innerWidth);
 
         const handleResize = () => {

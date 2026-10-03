@@ -17,11 +17,10 @@ export const projects: Project[] = [
         name: "E-Commerce Sales & Customer Analytics",
         tag: "Featured",
         description: [
-            "Analyzed 1,956 sales transactions from 287 customers across all 8 divisions (Jan 2023 – Dec 2024) to explain why revenue fell from BDT 162.47M to BDT 155.62M.",
-            "Traced the decline to Laptops (-10.77%) and Monitors (-13.90%), starting in the second half of 2024 and concentrated in Chattogram and Rangpur.",
-            "Built two interactive Excel dashboards with slicers: a Sales Dashboard and a Customer Segment Dashboard.",
-            "Segmented customers with RFM analysis and found 43.21% of customers in vulnerable groups, led by 78 At Risk customers averaging BDT 1.24M in spend but inactive for about 189 days.",
-            "Profiled the dataset with Python, the interactive Power BI version is currently in progress."
+            "Analyzed 1,956 sales transactions from 287 customers across all 8 divisions to understand why revenue declined in 2024 and where the decline was concentrated.",
+            "Traced the revenue decline to Laptops and Monitors, with the largest drops concentrated in Chattogram and Rangpur, helping identify where further investigation was needed.",
+            "Built two interactive Excel dashboards to analyze sales performance, product and regional trends, and customer behavior.",
+            "Used Python to identify data consistency and accuracy issues."
         ],
         stack: ["Excel", "Python", "Pandas", "Power BI (in progress)"],
         links: [
@@ -33,12 +32,10 @@ export const projects: Project[] = [
         name: "Bangladesh Healthcare Appointment Analytics",
         tag: "Featured",
         description: [
-            "Analyzed 500 appointment records across 8 divisions to identify no-show patterns, specialty demand and patient waiting time trends.",
-            "Found Dhaka has the highest no-show rate (14.6%) and General Physicians have the longest average wait time (11.6 days).",
-            "Ran a 2023–2024 operational performance review in Excel across divisions, age groups and specialties, and translated it into business implications.",
-            "Built dashboards in Excel to communicate key trends.",
-            "Built Scikit learn models to analyze patient no-show risk and predict appointment waiting days, using cross validated model tuning and appropriate evaluation metrics.",
-            "Compared model performance to identify how available appointment and patient data could support operational planning and improve management of scheduling risks."
+            "Analyzed healthcare appointment data to understand operational patterns around patient no-shows, appointment demand, and waiting times across divisions, specialties, and patient groups.",
+            "Identified key operational patterns and translated them into business insights for appointment scheduling, service planning, and areas requiring further investigation.",
+            "Extended the analysis with predictive modeling to evaluate whether available appointment data could support no-show and waiting-time prediction.",
+            "Evaluated model performance and limitations to determine whether the available data contained sufficient predictive information for practical use."
         ],
         stack: ["Python", "Pandas", "Matplotlib", "Power BI (in progress)", "Excel", "Scikit Learn", "Statistics", "Machine Learning"],
         links: [
