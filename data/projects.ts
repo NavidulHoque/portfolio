@@ -25,7 +25,7 @@ export const projects: Project[] = [
         stack: ["Excel", "Python", "Pandas", "Power BI (in progress)"],
         links: [
             { label: "Project Details", url: "https://github.com/NavidulHoque/ecommerce_sales_data" },
-            { label: "Detailed Analysis Report", url: "https://drive.google.com/file/d/185Hsw0qwJqBCVa8sTLtaCxbsOSdiS0uW/view?usp=sharing" }
+            { label: "Detailed Analysis Report", url: "https://drive.google.com/file/d/1tgbJTymTYKr5M9bt8z35vYAOsCXgQi2d/view?usp=sharing" }
         ]
     },
     {
