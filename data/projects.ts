@@ -20,6 +20,7 @@ export const projects: Project[] = [
             "Analyzed 1,956 sales transactions from 287 customers across all 8 divisions to understand why revenue declined in 2024 and where the decline was concentrated.",
             "Traced the revenue decline to Laptops and Monitors, with the largest drops concentrated in Chattogram and Rangpur, helping identify where further investigation was needed.",
             "Built two interactive Excel dashboards to analyze sales performance, product and regional trends, and customer behavior.",
+            "Applied RFM analysis to segment customers by recency, purchase frequency and spending, identifying vulnerable customer groups and potential retention opportunities.",
             "Used Python to identify data consistency and accuracy issues."
         ],
         stack: ["Excel", "Python", "Pandas", "Power BI (in progress)"],
